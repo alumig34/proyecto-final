@@ -10,6 +10,8 @@ int main() {
     inserta_reg(&v, &n);
     mostrar_vector(v, n);
 
+    vector_a_fichero(v, n);
+
     return 0;
 }
 
