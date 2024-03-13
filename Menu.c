@@ -20,7 +20,6 @@ int menu(COORD c, char *arreglo[], int n) {
 
     int posiActual = 0;
     int posiAnterior = posiActual;
-    int devolver = -1;
     int max;
     char cTecla;
 
@@ -34,6 +33,7 @@ int menu(COORD c, char *arreglo[], int n) {
     SetCursorPosition(c.X, c.Y + n+1);
     printf("Presione un Tecla ...");
 
+    int devolver = -1;
     while(devolver == -1) {
 
         print_linea_menu(c, posiAnterior, posiActual, arreglo, max);

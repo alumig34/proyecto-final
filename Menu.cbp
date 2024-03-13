@@ -35,6 +35,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="Menu.h" />
+		<Unit filename="Modulo1.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Modulo1.h" />
 		<Unit filename="funciones.c">
 			<Option compilerVar="CC" />
 		</Unit>
