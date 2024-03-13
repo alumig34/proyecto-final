@@ -1,6 +1,12 @@
 #ifndef FUNCIONES_H_INCLUDED
 #define FUNCIONES_H_INCLUDED
 
+	#include <stdio.h>
+	#include <stdlib.h>
+	#include <string.h>
+	#include <stdbool.h>
+	#include <Windows.h>  // API del Sistema Operativo de Windows (Permite trabajar sobre la Consola).
+
     /**< Colores para Windows
         (La letra "L" al inicio, indica que es un color más claro que su antecesor).
      */
@@ -38,5 +44,11 @@
     char* leer_campo( int, char * );
     int leer_numero( char * ); // añadido
     void Color(int Background, int Text);
+	
+	COORD GetCursorPosition();
+	void SetCursorPosition(int, int);
+	void gotoxy(int, int);
+	void gotoxy_printf(int, int, char *);
+
 
 #endif // FUNCIONES_H_INCLUDED

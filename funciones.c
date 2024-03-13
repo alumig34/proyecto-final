@@ -1,9 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <stdbool.h>
-#include <Windows.h>  // API del Sistema Operativo de Windows (Permite trabajar sobre la Consola).
-
 #include "funciones.h"
 
 /** \brief Elimina '\n' del string, sustituyendo por '\0'
@@ -81,3 +75,25 @@ void Color(int Background, int Text){ // Función para cambiar el color del fondo
 	SetConsoleTextAttribute(Console, New_Color); // Guardamos los cambios en la Consola.
 
 }
+
+/******************** Control cursor *********************/
+
+COORD GetCursorPosition() {
+   HANDLE h = GetStdHandle(STD_OUTPUT_HANDLE);
+   CONSOLE_SCREEN_BUFFER_INFO bufferInfo;
+   GetConsoleScreenBufferInfo(h, &bufferInfo);
+   return bufferInfo.dwCursorPosition;
+}
+
+void SetCursorPosition(int XPos, int YPos) {
+   COORD coord;
+   coord.X = XPos; coord.Y = YPos;
+   SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE),coord);
+}
+
+void gotoxy(int x,int y){ SetCursorPosition(x, y); }
+void gotoxy_printf(int x,int y, char *txt){
+    SetCursorPosition(x, y);
+    printf("%s",txt);
+}
+
