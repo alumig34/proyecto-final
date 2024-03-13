@@ -20,5 +20,6 @@ typedef struct {
 void fichero_a_vector2(tipo_reg **, int *);
 void mostrar_vector(tipo_reg *, int);
 void inserta_reg(tipo_reg **, int *);
+void vector_a_fichero(tipo_reg *, int);
 
 #endif // MODULO1_H_INCLUDED
