@@ -44,14 +44,13 @@
     char* leer_campo( int, char * );
     int leer_numero( char * ); // añadido
     void Color(int Background, int Text);
-	
+
 	COORD GetCursorPosition();
 	void SetCursorPosition(int, int);
 	void gotoxy(int, int);
 	void gotoxy_printf(int, int, char *);
-	
+
 	void pausa();
 	void limpiar_pantalla();
-
 
 #endif // FUNCIONES_H_INCLUDED

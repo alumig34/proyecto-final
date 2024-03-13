@@ -9,15 +9,6 @@
 	<stdbool.h>
 	<Windows.h>
 
-1710371156 source:c:\users\ejcl3\desktop\nuevoc\proyecto-final\menu.c
-	"Menu.h"
-
-1710371156 c:\users\ejcl3\desktop\nuevoc\proyecto-final\menu.h
-	<stdio.h>
-	<stdlib.h>
-	<windows.h>
-	"funciones.h"
-
 1710370667 source:c:\users\ejcl3\desktop\nuevoc\proyecto-final\modulo1.c
 	"Modulo1.h"
 
@@ -26,8 +17,4 @@
 	<stdlib.h>
 	<string.h>
 	"funciones.h"
-
-1710371652 source:c:\users\ejcl3\desktop\nuevoc\proyecto-final\prueba_menu.c
-	"Menu.h"
-	"Modulo1.h"
 

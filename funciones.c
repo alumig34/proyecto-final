@@ -73,7 +73,6 @@ void Color(int Background, int Text){ // Función para cambiar el color del fondo
 	int    New_Color= Text + (Background * 16);
 
 	SetConsoleTextAttribute(Console, New_Color); // Guardamos los cambios en la Consola.
-
 }
 
 /******************** Control cursor *********************/
@@ -101,7 +100,7 @@ void gotoxy_printf(int x,int y, char *txt){
 
 void pausa() {
     Color(BLACK, BLUE);
-    printf("Pulsa <ENTER> para continuar.");
+    printf("Pulse <ENTER> para continuar.");
     fflush( stdin );
     getchar();
     fflush( stdin );

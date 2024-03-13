@@ -56,7 +56,6 @@ void mostrar_vector(tipo_reg *v, int n) {
                v[i].edad);
 }
 
-
 void inserta_reg(tipo_reg **v, int *n) {
 
     // reservamos memoria
@@ -69,8 +68,8 @@ void inserta_reg(tipo_reg **v, int *n) {
     (*v)[*n].edad = leer_numero("Edad?");
 
     (*n)++;
-
 }
+
 void vector_a_fichero(tipo_reg *v, int n) {
 
     FILE *fich;
