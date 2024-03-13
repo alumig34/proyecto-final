@@ -1,33 +1,33 @@
 # depslib dependency file v1.0
-1710367224 source:c:\users\ejcl3\desktop\nuevoc\proyecto-final\funciones.c
+1710371156 source:c:\users\ejcl3\desktop\nuevoc\proyecto-final\funciones.c
 	"funciones.h"
 
-1710366820 c:\users\ejcl3\desktop\nuevoc\proyecto-final\funciones.h
+1710371156 c:\users\ejcl3\desktop\nuevoc\proyecto-final\funciones.h
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	<stdbool.h>
 	<Windows.h>
 
-1710368334 source:c:\users\ejcl3\desktop\nuevoc\proyecto-final\menu.c
+1710371156 source:c:\users\ejcl3\desktop\nuevoc\proyecto-final\menu.c
 	"Menu.h"
 
-1710367808 c:\users\ejcl3\desktop\nuevoc\proyecto-final\menu.h
+1710371156 c:\users\ejcl3\desktop\nuevoc\proyecto-final\menu.h
 	<stdio.h>
 	<stdlib.h>
 	<windows.h>
 	"funciones.h"
 
-1710366809 source:c:\users\ejcl3\desktop\nuevoc\proyecto-final\modulo1.c
+1710370667 source:c:\users\ejcl3\desktop\nuevoc\proyecto-final\modulo1.c
 	"Modulo1.h"
 
-1710366809 c:\users\ejcl3\desktop\nuevoc\proyecto-final\modulo1.h
+1710371185 c:\users\ejcl3\desktop\nuevoc\proyecto-final\modulo1.h
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"funciones.h"
 
-1710368531 source:c:\users\ejcl3\desktop\nuevoc\proyecto-final\prueba_menu.c
+1710371276 source:c:\users\ejcl3\desktop\nuevoc\proyecto-final\prueba_menu.c
 	"Menu.h"
 	"Modulo1.h"
 

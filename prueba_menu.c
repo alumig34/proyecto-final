@@ -33,7 +33,7 @@ int main() {
             mostrar_vector(vector, tam_vector);
             break;
         case 3: // VECTOR a FICHERO"
-            //vector_a_fichero(vector, tam_vector);
+            vector_a_fichero(vector, tam_vector);
             break;
         }
 
@@ -46,8 +46,7 @@ int main() {
     c = GetCursorPosition();
     printf("x=%d, y=%d\n", c.X, c.Y);
 
-    g
-    otoxy(0,10);
+    gotoxy(0,10);
     //system("PAUSE");
 
     return 0;
