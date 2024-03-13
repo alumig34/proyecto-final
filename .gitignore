@@ -1,5 +1,4 @@
 #codeblocks
-*.cbp
 *.depend
 *.layout
 bin/
