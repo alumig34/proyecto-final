@@ -7,6 +7,6 @@
 
 #include "funciones.h"
 
-int menu(COORD, char *[], int);
+int menu(char [], COORD, char *[], int, int);
 
 #endif // MENU_H_INCLUDED

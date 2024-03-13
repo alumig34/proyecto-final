@@ -100,18 +100,18 @@ void gotoxy_printf(int x,int y, char *txt){
 /******************** Control pantalla *********************/
 
 void pausa() {
-    IFC_Color(BLACK, BLUE);
+    Color(BLACK, BLUE);
     printf("Pulsa <ENTER> para continuar.");
     fflush( stdin );
     getchar();
     fflush( stdin );
-    IFC_Color(BLACK, WHITE);
+    Color(BLACK, WHITE);
 }
 
 void limpiar_pantalla() {
     // printf("\033[2J\033[1;1H"); // Linux
     // system("CLEAR"); // Linux
-    IFC_Color(BLACK, WHITE);
+    Color(BLACK, WHITE);
     system("CLS");// Windows
-    IFC_Color(BLACK, WHITE);
+    Color(BLACK, WHITE);
 }

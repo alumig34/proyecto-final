@@ -16,27 +16,32 @@ static void print_linea_menu(COORD c, int posiAnterior, int posiActual, char *ar
     Color(BLACK,WHITE);
 }
 
-int menu(COORD c, char *arreglo[], int n) {
+int menu(char titulo[], COORD c, char *arreglo[], int n, int posIni) {
 
-    int posiActual = 0;
+    int posiActual = posIni;
     int posiAnterior = posiActual;
     int max;
     char cTecla;
+    COORD coord_espera;
 
     max = lenMenu(arreglo, n);
+
+    gotoxy_printf(c.X, c.Y, titulo);
+    c.Y += 2;
 
     for(int i=0; i<n; i++) {
         SetCursorPosition(c.X, c.Y + i);
         printf("%d - %-*s   ", i+1, max, arreglo[i]);
     }
 
-    SetCursorPosition(c.X, c.Y + n+1);
-    printf("Presione un Tecla ...");
+    gotoxy_printf(c.X, c.Y + n+1, "Presione un Tecla ...");
+    coord_espera = GetCursorPosition();
 
     int devolver = -1;
     while(devolver == -1) {
 
         print_linea_menu(c, posiAnterior, posiActual, arreglo, max);
+        SetCursorPosition(coord_espera.X, coord_espera.Y);
 
         cTecla = getch();
         if(cTecla == 0)
