@@ -35,7 +35,7 @@ void fichero_a_vector2(tipo_reg **v, int *n) {
         exit(1);
     }
 
-    while(!feof(fich)) {
+    while (!feof(fich)) {
         *v = (tipo_reg *) realloc(*v, ((*n)+1) * sizeof(tipo_reg));
         fscanf(fich, "%[^-]-%[^-]-%d\n", (*v)[*n].nombre, (*v)[*n].direccion, &(*v)[*n].edad);
         (*n)++;
@@ -49,7 +49,7 @@ void mostrar_vector(tipo_reg *v, int n) {
     Color(YELLOW, BLACK);
     printf("\nMostrando vector:\n");
     Color(BLACK, WHITE);
-    for(int i=0; i<n; i++)
+    for (int i=0; i<n; i++)
         printf("%d => [ %-*s - %-*s - %2d ]\n", i,
                MAX_NOMBRE   , v[i].nombre,
                MAX_DIRECCION, v[i].direccion,
@@ -70,4 +70,19 @@ void inserta_reg(tipo_reg **v, int *n) {
 
     (*n)++;
 
+}
+void vector_a_fichero(tipo_reg *v, int n) {
+
+    FILE *fich;
+    fich = fopen("datos.txt", "w");
+    if (fich == NULL) {
+        printf("EROOR al abrir el fichero de escritura ...\n");
+        exit(2);
+    }
+
+    for (int i=0; i<n; i++) {
+        fprintf(fich, "%s-%s-%d\n", v[i].nombre, v[i].direccion, v[i].edad);
+    }
+
+    fclose(fich);
 }
