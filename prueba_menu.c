@@ -11,8 +11,7 @@ int main() {
 
     char *aMenu[] = {"uno","dos","tres","Salir"};
     opcion = menu((COORD){10,1}, aMenu, sizeof(aMenu)/sizeof(aMenu[0]));
-    gotoxy(40,1);  printf("OPCION=====>%d\n", opcion);
-
+    gotoxy(11,1);  printf("OPCION=====>%d\n", opcion);
 
     gotoxy_printf(40,2,"TERMINAMOS...");
     c = GetCursorPosition();
